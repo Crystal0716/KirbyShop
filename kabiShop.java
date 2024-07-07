@@ -9,6 +9,7 @@ public class kabiShop
         int aKirby = 0 ;
         int bKirby = 0 ;
         int cKirby = 0 ;
+        int money = 0 ;
         int inputOptions ;
         System.out.println("//////////Welcome to NCKU-PD1-Kirby-Shop\\\\\\\\\\\\\\\\\\\\");
         Scanner scanner = new Scanner(System.in);
@@ -36,15 +37,13 @@ public class kabiShop
                         System.out.println("Kirby-A: "+aKirby);
                         System.out.println("Kirby-B: "+bKirby);
                         System.out.println("Kirby-C: "+cKirby);
-                        int totalkirby = totalKirby(aKirby,bKirby,cKirby);
-                        int maxBox = max(aKirby, bKirby, cKirby);
-                        int money = money(aKirby, bKirby, cKirby, maxBox);
+                        int totalkirby = totalKirby(aKirby,bKirby,cKirby);                       
                         System.out.println("Kirby: "+totalkirby+", Money: "+money);
                         System.out.println("===================================");
                     }
                     else
                     {
-                        
+                        System.out.println("Your shop is openning!");
                     }
                     break;
                 case 3:
@@ -73,7 +72,7 @@ public class kabiShop
                                 else
                                 {
                                     System.out.print("Error: Please try again or enter '-1 -1 -1' to make a new options: ");
-                                    scanner.nextLine(); 
+                                    scanner.nextLine();
                                     enterError = true ;
                                 }
                             }
@@ -96,6 +95,7 @@ public class kabiShop
                             aKirby += a;
                             bKirby += b;
                             cKirby += c;
+                            money += price;
                         }
                         
                     }
