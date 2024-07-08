@@ -43,7 +43,7 @@ public class kabiShop
                     }
                     else
                     {
-                        System.out.println("Your shop is openning!");
+                        System.out.println("Your Kirby shop has not opened");
                     }
                     break;
                 case 3:
